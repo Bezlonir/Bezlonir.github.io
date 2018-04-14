@@ -166,7 +166,7 @@ html {
   }
 
   .decor-mobile {
-    display:block;
+    display:flex;
     margin-top:2rem;
     height:3.5rem;
   }
