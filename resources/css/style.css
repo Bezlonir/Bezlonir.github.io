@@ -154,3 +154,38 @@ html {
   background-position:contain;
   background-size:cover;
 }
+
+.decor-moble {
+  display:none;
+}
+
+/*mobile styling for projects section*/
+@media only screen and (max-width: 768px) {
+  .decor-pc {
+    display:none;
+  }
+
+  .decor-mobile {
+    display:block;
+    margin-top:2rem;
+    height:3.5rem;
+  }
+
+  .vision {
+    padding-top:10rem;
+  }
+
+  .vision h1 {
+    padding-top: 7rem;
+  }
+
+  .projects-bottom-decor {
+    display:none;
+  }
+
+  .projects-row, .projects-top-decor {
+    margin-left:.5rem;
+    margin-right:.5rem;
+    width:calc(100% - 1rem);
+  }
+}
