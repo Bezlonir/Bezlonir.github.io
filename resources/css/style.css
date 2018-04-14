@@ -132,25 +132,25 @@ html {
 
 
 .colmar-preview {
-  background-image:url("../images/colmar.jpg");
+  background-image:url("../images/colmarC.jpg");
   background-position:center;
   background-size:cover;
 }
 
 .trackster-preview {
-  background-image:url("../images/trackster.jpg");
+  background-image:url("../images/tracksterC.jpg");
   background-position:center;
   background-size:cover;
 }
 
 .jumpstart-preview {
-  background-image:url("../images/jumpstart.jpg");
+  background-image:url("../images/jumpstartC.jpg");
   background-position:center;
   background-size:cover;
 }
 
 .match-game-preview {
-  background-image:url("../images/match-game.jpg");
+  background-image:url("../images/match-gameC.jpg");
   background-position:contain;
   background-size:cover;
 }
