@@ -114,22 +114,63 @@ html {
   height:26rem;
   opacity:.7;
   box-shadow:-2px 2px rgba(25,30,50,.8);
+  padding-left:0;
+  padding-right:0;
 }
 
 .preview-background {
   height:100%;
   max-width:100%;
-  color:#cfcfde;
+  background-color:#3f3f4e;
+  color:#dedef6;
+  padding-left:1rem;
+  padding-top:.5rem;
   opacity:0;
   z-index:900;
   transition: opacity 500ms ease-in 70ms;
 }
 
 .preview-background:hover {
-  opacity:1;
+  opacity:.95;
 }
 
+.preview-background h2 {
+  background-image:url("../images/mountains-accent2alt.png");
+  background-size:contain;
+  background-position:center;
+  background-repeat:no-repeat;
+  color:#f2f2fb;
+  text-shadow: 1px 1px #1b1b2c,
+              -1px 1px #1b1b2c,
+              1px -1px #1b1b2c,
+              -1px -1px #1b1b2c;
+}
+.preview-background .image-container {
+  margin-top:1rem;
 
+}
+
+.link-split {
+  display:flex;
+  height:12rem;
+}
+
+.site-link {
+  width:50%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  border-right: dotted 1px #dedef6;
+}
+
+.github-link {
+  width:50%;
+  height:auto;
+  margin-left:1rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
 
 .colmar-preview {
   background-image:url("../images/colmarC.jpg");
