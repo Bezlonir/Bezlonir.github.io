@@ -55,6 +55,10 @@ html {
 /*-----------------*/
 /*jumbotron styling*/
 /*-----------------*/
+.vision {
+  padding-top:5rem;
+}
+
 .vision .jumbotron {
   background-image: url('../images/snowy-mountains.jpg');
   background-size:cover;
@@ -80,6 +84,17 @@ html {
                 -1px 1px rgba(220,220,236,.4),
                 1px -1px rgba(220,220,236,.4),
                 -1px -1px rgba(220,220,236,.4);
+}
+
+/*mobile styling for jumbotron section*/
+@media only screen and (max-width:768px) {
+  .vision {
+    padding-top:6rem;
+  }
+
+  .vision h1 {
+    padding-top: 7rem;
+  }
 }
 
 /*----------------*/
@@ -218,15 +233,6 @@ html {
 
 /*mobile styling for projects section*/
 @media only screen and (max-width: 1199px) {
-
-  .vision {
-    padding-top:10rem;
-  }
-
-  .vision h1 {
-    padding-top: 7rem;
-  }
-
   .decor-pc {
     display:none;
   }
