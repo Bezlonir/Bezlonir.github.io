@@ -110,6 +110,7 @@ project-rows.
 to be revealed on hover. the preview-backgrounds hold the
 links to the websites and their github pages, while
 site-previews only have a screenshot of the site.*/
+
 .projects {
   background-image:url("../images/snow.jpg");
   padding-bottom:4rem;
@@ -243,6 +244,8 @@ site-previews only have a screenshot of the site.*/
 
 /*mobile styling for projects section*/
 @media only screen and (max-width: 1199px) {
+
+
   .decor-pc {
     display:none;
   }
