@@ -100,6 +100,16 @@ html {
 /*----------------*/
 /*projects styling*/
 /*----------------*/
+/*decor elements are lined up in decor rows for pc-based
+display, while site-previews are lined up in
+project-rows.
+  for mobile, decor elements are tagged decor-mobile and
+interspersed with site previews set to col-xs-12 in the
+project-rows.
+  preview-backgrounds are nested in the site-previews
+to be revealed on hover. the preview-backgrounds hold the
+links to the websites and their github pages, while
+site-previews only have a screenshot of the site.*/
 .projects {
   background-image:url("../images/snow.jpg");
   padding-bottom:4rem;
