@@ -15,8 +15,9 @@ html {
   height:auto;
 }
 
-
+/*--------------*/
 /*header styling*/
+/*--------------*/
 .navbar li {
   line-height:50px;
   padding-right:1rem;
@@ -40,11 +41,20 @@ html {
   width:auto;
 }
 
-.navbar-brand {
-  display:flex;
+/*mobile styling for header*/
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    display:flex;
+  }
+
+  .navbar-nav li {
+    padding-left:1rem;
+  }
 }
 
+/*-----------------*/
 /*jumbotron styling*/
+/*-----------------*/
 .vision .jumbotron {
   background-image: url('../images/snowy-mountains.jpg');
   background-size:cover;
