@@ -293,3 +293,12 @@ site-previews only have a screenshot of the site.*/
   }
 
 }
+
+/*footer styling*/
+footer {
+  text-align:center;
+}
+
+footer h2 {
+  font-weight:bold;
+}
