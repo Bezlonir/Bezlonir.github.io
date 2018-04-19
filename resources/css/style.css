@@ -296,12 +296,14 @@ site-previews only have a screenshot of the site.*/
 
 /*footer styling*/
 footer {
-  text-align:center;
+
+  text-align:left;
   background-color:rgba(25,30,50, .6);
 }
 
 footer .jumbotron {
   background-color:inherit;
+  padding-left:40%;
 }
 
 footer h2 {
@@ -319,4 +321,21 @@ footer h2 {
 footer .jumbotron p {
   margin-bottom:.8rem;
   color: #dedef6;
+}
+
+/*footer styling for mobile*/
+@media only screen and (max-width:1199px) {
+  footer .jumbotron {
+    padding-left:20%;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  footer .jumbotron {
+    padding-left:15%;
+  }
+
+  footer .jumbotron p {
+    font-size:1.6rem;
+  }
 }
