@@ -1,5 +1,11 @@
 $(document).ready(function(){
-  // $('.site-preview').hover(function(){
-  //   $('.preview-background').css("display", "block");
-  // });
+  // on click, set the clicked link to active styling
+  $('.navbar li').click(function(){
+    var currentActive = $('.active').get(0);
+    var thisClick = $(this).get(0);
+    if (currentActive != thisClick) {
+      currentActive.setAttribute('class', ' ');
+      thisClick.setAttribute('class', 'active');
+    };
+  });
 });

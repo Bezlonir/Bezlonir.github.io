@@ -297,8 +297,26 @@ site-previews only have a screenshot of the site.*/
 /*footer styling*/
 footer {
   text-align:center;
+  background-color:rgba(25,30,50, .6);
+}
+
+footer .jumbotron {
+  background-color:inherit;
 }
 
 footer h2 {
+  font-family:"Abril Fatface", sans-serif;
   font-weight:bold;
+  font-size:4rem;
+  margin-bottom:.6rem;
+  color: #070712;
+  text-shadow: 1px 1px #dedef6,
+              -1px 1px #dedef6,
+              1px -1px #dedef6,
+              -1px -1px #dedef6;
+}
+
+footer .jumbotron p {
+  margin-bottom:.8rem;
+  color: #dedef6;
 }
