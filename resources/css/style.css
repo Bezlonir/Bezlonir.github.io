@@ -285,7 +285,7 @@ site-previews only have a screenshot of the site.*/
 /*mobile styling for projects section*/
 @media only screen and (max-width: 768px) {
   .decor-mobile-top {
-    margin-top:2rem;
+    margin-top:3rem;
   }
 
   .site-preview {
