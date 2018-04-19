@@ -13,6 +13,7 @@ html {
 .image-container img {
   max-width:100%;
   height:auto;
+  max-height:100%;
 }
 
 /*--------------*/
@@ -125,9 +126,9 @@ site-previews only have a screenshot of the site.*/
 .decor {
   background-color: rgba(25,30,50,.8);
   display:flex;
-  align-items:flex-start;
-  justify-content:center;
-  z-index:3;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
   padding:0;
 }
 
@@ -140,9 +141,13 @@ site-previews only have a screenshot of the site.*/
 }
 
 .decor .image-container {
-  margin-top:.2em;
+  margin:.4rem 0;
   max-width:80%;
   opacity:.9;
+}
+
+.decor img {
+  height:90%;
 }
 
 .site-preview {
@@ -151,7 +156,7 @@ site-previews only have a screenshot of the site.*/
   opacity:.7;
   padding-left:0;
   padding-right:0;
-  box-shadow:-2px 2px rgba(25,30,50,.8);
+  box-shadow:-3px 3px rgba(25,30,50,.8);
   transition: box-shadow 500ms ease-in 70ms;
 }
 
@@ -171,17 +176,23 @@ site-previews only have a screenshot of the site.*/
   transition: opacity 500ms ease-in 70ms;
 }
 
+.preview-logo {
+  background-image:url("../images/mountains-accent2alt.png");
+  background-size:cover;
+  background-position:bottom;
+  background-repeat:no-repeat;
+  height:7.5rem;
+  width:35%;
+  margin:auto;
+}
+
 .preview-background:hover {
   opacity:.95;
 }
 
 .preview-background h2 {
-  background-image:url("../images/mountains-accent2alt.png");
-  background-size:contain;
-  background-position:center;
-  background-repeat:no-repeat;
   color:#f2f2fb;
-
+  font-family:"Abril Fatface", sans-serif;
   text-shadow: 1px 1px #1b1b2c,
               -1px 1px #1b1b2c,
               1px -1px #1b1b2c,
@@ -304,7 +315,7 @@ footer {
 footer .jumbotron {
   background-color:inherit;
   padding-left:40%;
-  margin-bottom;
+  margin-bottom:0;
 }
 
 footer h2 {
