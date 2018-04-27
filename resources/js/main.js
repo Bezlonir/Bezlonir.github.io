@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
   // on click, set the clicked link to active styling
   $('.navbar li').click(function(){
@@ -9,9 +11,16 @@ $(document).ready(function(){
     };
   });
 
+  sizePreview();
+
+
   $(window).resize(function () {
-    var allianceWidth = $('.alliance-preview').width();
-    var allianceHeight = allianceWidth * 0.6;
-    $('.alliance-preview').css('height', allianceHeight);
+    sizePreview();
   });
 });
+
+function sizePreview() {
+  var sitePreviewWidth = $('.site-preview').width();
+  var sitePreviewHeight = sitePreviewWidth * 0.6;
+  $('.site-preview').css('height', sitePreviewHeight);
+};
