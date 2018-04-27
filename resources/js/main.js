@@ -8,4 +8,10 @@ $(document).ready(function(){
       thisClick.setAttribute('class', 'active');
     };
   });
+
+  $(window).resize(function () {
+    var allianceWidth = $('.alliance-preview').width();
+    var allianceHeight = allianceWidth * 0.6;
+    $('.alliance-preview').css('height', allianceHeight);
+  });
 });
