@@ -20,7 +20,22 @@ $(document).ready(function(){
 });
 
 function sizePreview() {
-  var sitePreviewWidth = $('.site-preview').width();
-  var sitePreviewHeight = sitePreviewWidth * 0.6;
-  $('.site-preview').css('height', sitePreviewHeight);
+  var sitePreviews = [];
+  $sitePreviews = $('.site-preview');
+
+  $sitePreviews.each(function() {
+    var sitePreviewWidth = $(this).width();
+    var sitePreviewHeight;
+    if ($(window).width() < 768) {
+      sitePreviewHeight = sitePreviewWidth * 0.9;
+    } else {
+      if ($(this).hasClass("alliance-preview")){
+        sitePreviewHeight = sitePreviewWidth * 0.8;
+      } else {
+        sitePreviewHeight = sitePreviewWidth * 1;
+      };
+    };
+    $(this).css('height', sitePreviewHeight);
+  });
+
 };

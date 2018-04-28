@@ -156,7 +156,7 @@ site-previews only have a screenshot of the site.*/
 
 .site-preview {
   position:relative;
-  height:46rem;
+  /*height:46rem;*/
   opacity:.7;
   padding-left:0;
   padding-right:0;
@@ -322,7 +322,7 @@ site-previews only have a screenshot of the site.*/
 
 
   .decor-mobile-top {
-    margin-top:3rem;
+    margin-top:10rem;
   }
 }
 
