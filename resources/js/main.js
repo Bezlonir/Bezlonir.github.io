@@ -30,7 +30,7 @@ function sizePreview() {
       sitePreviewHeight = sitePreviewWidth * 0.9;
     } else {
       if ($(this).hasClass("alliance-preview")){
-        sitePreviewHeight = sitePreviewWidth * 0.8;
+        sitePreviewHeight = sitePreviewWidth * 0.7;
       } else {
         sitePreviewHeight = sitePreviewWidth * 1;
       };
