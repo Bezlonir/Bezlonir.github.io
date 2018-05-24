@@ -112,10 +112,6 @@ p {
   background-repeat:repeat;
 }
 
-.projects-top-decor {
-  margin-top:10rem;
-}
-
 .decor {
   background-color: rgba(25,30,50,.8);
   display:flex;
@@ -127,11 +123,7 @@ p {
 
 .decor-top {
   height:3.5rem;
-  margin-top:6rem;
-}
-
-.projects-bottom-decor .decor {
-  height:2rem;
+  margin-top:8rem;
 }
 
 .decor .image-container {
@@ -263,10 +255,6 @@ p {
   background-size:cover;
 }
 
-.decor-mobile {
-  display:none;
-}
-
 /*mobile styling for projects section*/
 @media only screen and (max-width: 1199px) {
   .preview-logo {
@@ -274,33 +262,7 @@ p {
     height:8%;
   }
 
-  .decor-pc {
-    display:none;
-  }
-
-  .projects-top-decor {
-    margin-top:10rem;
-    height:auto;
-  }
-
-  .decor-mobile {
-    display:flex;
-  }
-
-  .decor-mobile-top {
-    margin-top:10rem;
-    height:3.5rem;
-  }
-
-  .decor-mobile-bottom {
-    height:2rem;
-  }
-
-  .projects-bottom-decor {
-    display:none;
-  }
-
-  .projects-row, .projects-top-decor {
+  .projects-row {
     margin-left:.5rem;
     margin-right:.5rem;
     width:calc(100% - 1rem);
@@ -311,7 +273,7 @@ p {
 @media only screen and (max-width: 768px) {
 
 
-  .decor-mobile-top {
+  .decor-top {
     margin-top:10rem;
   }
 }
