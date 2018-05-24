@@ -105,17 +105,6 @@ p {
 /*----------------*/
 /*projects styling*/
 /*----------------*/
-/*decor elements are lined up in decor rows for pc-based
-display, while site-previews are lined up in
-project-rows.
-  for mobile, decor elements are tagged decor-mobile and
-interspersed with site previews set to col-xs-12 in the
-project-rows.
-  preview-backgrounds are nested in the site-previews
-to be revealed on hover. the preview-backgrounds hold the
-links to the websites and their github pages, while
-site-previews only have a screenshot of the site.*/
-
 .projects {
   background-image:url("../images/snow3.jpg");
   padding-bottom:4rem;
@@ -136,8 +125,9 @@ site-previews only have a screenshot of the site.*/
   padding:0;
 }
 
-.projects-top-decor .decor {
+.decor-top {
   height:3.5rem;
+  margin-top:6rem;
 }
 
 .projects-bottom-decor .decor {
@@ -157,7 +147,7 @@ site-previews only have a screenshot of the site.*/
 .site-preview {
   position:relative;
   /*height:46rem;*/
-  opacity:.7;
+  opacity:.8;
   padding-left:0;
   padding-right:0;
   box-shadow:-3px 3px rgba(25,30,50,.8);
@@ -177,7 +167,7 @@ site-previews only have a screenshot of the site.*/
   padding-top:.5rem;
   opacity:0;
   z-index:900;
-  transition: opacity 500ms ease-in 70ms;
+  transition: opacity 500ms ease-in 260ms;
 }
 
 .preview-logo {
