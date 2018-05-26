@@ -13,7 +13,6 @@ $(document).ready(function(){
 
   sizePreview();
 
-
   $(window).resize(function () {
     sizePreview();
   });

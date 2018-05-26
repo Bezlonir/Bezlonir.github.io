@@ -1,325 +1,248 @@
 /*portfolio site for Michael Bragg, web programmer*/
-
-html {
-
-}
-
 p {
-  font-family:"Bree Serif", serif;
-}
+  font-family: "Bree Serif", serif; }
 
 .image-container {
-  max-width:100%;
-  height:auto;
-  overflow:hidden;
-}
+  max-width: 100%;
+  height: auto;
+  overflow: hidden; }
 
 .image-container img {
-  max-width:100%;
-  height:auto;
-  max-height:100%;
-}
+  max-width: 100%;
+  height: auto;
+  max-height: 100%; }
 
 /*--------------*/
 /*header styling*/
 /*--------------*/
-.navbar li {
-  line-height:50px;
-  padding-right:1rem;
-}
-
 .navbar {
-  font-family:"Abril Fatface" , sans-serif;
-}
+  font-family: "Abril Fatface" , sans-serif; }
+  .navbar li {
+    line-height: 50px;
+    padding-right: 1rem; }
+    .navbar li:active {
+      background-color: #f8f8f8;
+      text-shadow: 1px 1px 2px #a0a0ab; }
 
-.active {
-  background-color: #f8f8f8;
-  text-shadow: 1px 1px 2px #a0a0ab;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color:inherit;
-}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background-color: inherit; }
 
 .navbar img {
-  height:35px;
-  width:auto;
-}
+  height: 35px;
+  width: auto; }
 
 /*mobile styling for header*/
 @media only screen and (max-width: 768px) {
   .navbar-nav {
-    display:flex;
-  }
+    display: flex; }
 
   .navbar-nav li {
-    padding-left:1rem;
-  }
-}
-
+    padding-left: 1rem; } }
 /*-----------------*/
 /*jumbotron styling*/
 /*-----------------*/
 .vision {
-  padding-top:5rem;
-}
+  padding-top: 5rem; }
 
 .vision .jumbotron {
-  background-image: url('../images/snowy-mountains.jpg');
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
+  background-image: url("../images/snowy-mountains.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 40rem;
-  text-align:center;
-  margin-bottom:0;
-}
+  text-align: center;
+  margin-bottom: 0; }
 
 .vision h1 {
-  color:#070712;
-  opacity:.95;
-  padding-top:3rem;
-  padding-bottom:3rem;
-  font-family:"Abril Fatface", sans-serif;
-  font-size:8rem;
-  font-weight:bold;
-  letter-spacing:1.4rem;
-  text-shadow: 1px 1px 5px rgba(220,220,236,.6),
-                3px 1px 8px rgba(220,220,236,.4),
-                1px 1px rgba(220,220,236,.4),
-                -1px 1px rgba(220,220,236,.4),
-                1px -1px rgba(220,220,236,.4),
-                -1px -1px rgba(220,220,236,.4);
-}
+  color: #070712;
+  opacity: .95;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: "Abril Fatface", sans-serif;
+  font-size: 8rem;
+  font-weight: bold;
+  letter-spacing: 1.4rem;
+  text-shadow: 1px 1px 5px rgba(220, 220, 236, 0.6), 3px 1px 8px rgba(220, 220, 236, 0.4), 1px 1px rgba(220, 220, 236, 0.4), -1px 1px rgba(220, 220, 236, 0.4), 1px -1px rgba(220, 220, 236, 0.4), -1px -1px rgba(220, 220, 236, 0.4); }
 
 /*mobile styling for jumbotron section*/
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   .vision {
-    padding-top:6rem;
-  }
+    padding-top: 6rem; }
 
   .vision h1 {
-    padding-top: 7rem;
-  }
-}
-
+    padding-top: 7rem; } }
 /*----------------*/
 /*projects styling*/
 /*----------------*/
 .projects {
-  background-image:url("../images/snow3.jpg");
-  padding-bottom:4rem;
-  background-size:contain;
-  background-repeat:repeat;
-}
+  background-image: url("../images/snow3.jpg");
+  padding-bottom: 4rem;
+  background-size: contain;
+  background-repeat: repeat; }
 
 .decor {
-  background-color: rgba(25,30,50,.8);
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:space-around;
-  padding:0;
-}
+  background-color: rgba(25, 30, 50, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0; }
 
 .decor-top {
-  height:3.5rem;
-  margin-top:8rem;
-}
+  height: 3.5rem;
+  margin-top: 8rem; }
 
 .decor .image-container {
-  margin:.4rem 0;
-  max-width:80%;
-  opacity:.9;
-}
+  margin: .4rem 0;
+  max-width: 80%;
+  opacity: .9; }
 
 .decor img {
-  height:90%;
-}
+  height: 90%; }
 
 .site-preview {
-  position:relative;
+  position: relative;
   /*height:46rem;*/
-  opacity:.8;
-  padding-left:0;
-  padding-right:0;
-  box-shadow:-3px 3px rgba(25,30,50,.8);
-  transition: box-shadow 500ms ease-in 70ms;
-}
+  opacity: .8;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: -3px 3px rgba(25, 30, 50, 0.8);
+  transition: box-shadow 500ms ease-in 70ms; }
 
 .site-preview:hover {
-  box-shadow:none;
-}
+  box-shadow: none; }
 
 .preview-background {
-  height:100%;
-  max-width:100%;
-  background-color:#3f3f4e;
-  color:#dedef6;
-  padding-left:1rem;
-  padding-top:.5rem;
-  opacity:0;
-  z-index:900;
-  transition: opacity 500ms ease-in 260ms;
-}
+  height: 100%;
+  max-width: 100%;
+  background-color: #3f3f4e;
+  color: #dedef6;
+  padding-left: 1rem;
+  padding-top: .5rem;
+  opacity: 0;
+  z-index: 900;
+  transition: opacity 500ms ease-in 260ms; }
 
 .preview-logo {
-  background-image:url("../images/mountains-accent2alt.png");
-  background-size:cover;
-  background-position:bottom;
-  background-repeat:no-repeat;
-  width:auto;
-  max-width:50%;
-  padding-top:20%;
-  height:15%;
-  margin:auto;
-  margin-top:6%;
-}
+  background-image: url("../images/mountains-accent2alt.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: auto;
+  max-width: 50%;
+  padding-top: 20%;
+  height: 15%;
+  margin: auto;
+  margin-top: 6%; }
 
 .alliance-preview .preview-logo {
-  max-width:35%;
-  height:8%;
-}
+  max-width: 35%;
+  height: 8%; }
 
 .preview-background:hover {
-  opacity:.95;
-}
+  opacity: .95; }
 
 .preview-background h2 {
-  color:#f2f2fb;
-  font-family:"Abril Fatface", sans-serif;
-  text-shadow: 1px 1px #1b1b2c,
-              -1px 1px #1b1b2c,
-              1px -1px #1b1b2c,
-              -1px -1px #1b1b2c;
-}
+  color: #f2f2fb;
+  font-family: "Abril Fatface", sans-serif;
+  text-shadow: 1px 1px #1b1b2c, -1px 1px #1b1b2c, 1px -1px #1b1b2c, -1px -1px #1b1b2c; }
 
 .preview-background .image-container {
-  margin-top:1rem;
-
-}
+  margin-top: 1rem; }
 
 .alliance-preview .preview-background:hover {
-  color:rgba(242,242,251,.6);
-}
+  color: rgba(242, 242, 251, 0.6); }
 
 .link-split {
-  display:flex;
-  height:40%;
-}
+  display: flex;
+  height: 40%; }
 
 .site-link {
-  width:50%;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  border-right: dotted 1px #dedef6;
-}
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: dotted 1px #dedef6; }
 
 .github-link {
-  width:50%;
-  height:auto;
-  margin-left:1rem;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-}
+  width: 50%;
+  height: auto;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .alliance-preview {
-  background-image:url("../images/bragg-group-comp2b.jpg");
-  background-position:center;
-  background-size:cover;
-  height:70rem;
-}
+  background-image: url("../images/bragg-group-comp2b.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 70rem; }
 
 .colmar-preview {
-  background-image:url("../images/colmarC.jpg");
-  background-position:top center;
-  background-size:cover;
-}
+  background-image: url("../images/colmarC.jpg");
+  background-position: top center;
+  background-size: cover; }
 
 .trackster-preview {
-  background-image:url("../images/tracksterC.jpg");
-  background-position:center;
-  background-size:cover;
-}
+  background-image: url("../images/tracksterC.jpg");
+  background-position: center;
+  background-size: cover; }
 
 .jumpstart-preview {
-  background-image:url("../images/jumpstartC.jpg");
-  background-position:center;
-  background-size:cover;
-}
+  background-image: url("../images/jumpstartC.jpg");
+  background-position: center;
+  background-size: cover; }
 
 .match-game-preview {
-  background-image:url("../images/match-gameC.jpg");
-  background-position:contain;
-  background-size:cover;
-}
+  background-image: url("../images/match-gameC.jpg");
+  background-position: contain;
+  background-size: cover; }
 
 /*mobile styling for projects section*/
 @media only screen and (max-width: 1199px) {
   .preview-logo {
-    max-width:40%;
-    height:8%;
-  }
+    max-width: 40%;
+    height: 8%; }
 
   .projects-row {
-    margin-left:.5rem;
-    margin-right:.5rem;
-    width:calc(100% - 1rem);
-  }
-}
-
+    margin-left: .5rem;
+    margin-right: .5rem;
+    width: calc(100% - 1rem); } }
 /*mobile styling for projects section*/
 @media only screen and (max-width: 768px) {
-
-
   .decor-top {
-    margin-top:10rem;
-  }
-}
-
+    margin-top: 10rem; } }
 /*footer styling*/
 footer {
-  text-align:left;
-  background-color:rgba(25,30,50, .6);
-}
+  text-align: left;
+  background-color: rgba(25, 30, 50, 0.6); }
 
 footer .jumbotron {
-  background-color:inherit;
-  padding-left:40%;
-  margin-bottom:0;
-}
+  background-color: inherit;
+  padding-left: 40%;
+  margin-bottom: 0; }
 
 footer h2 {
-  font-family:"Abril Fatface", sans-serif;
-  font-weight:bold;
-  font-size:4rem;
-  margin-bottom:.6rem;
+  font-family: "Abril Fatface", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: .6rem;
   color: #070712;
-  text-shadow: 1px 1px #dedef6,
-              -1px 1px #dedef6,
-              1px -1px #dedef6,
-              -1px -1px #dedef6;
-}
+  text-shadow: 1px 1px #dedef6, -1px 1px #dedef6, 1px -1px #dedef6, -1px -1px #dedef6; }
 
 footer .jumbotron p {
-  margin-bottom:.8rem;
-  color: #dedef6;
-}
+  margin-bottom: .8rem;
+  color: #dedef6; }
 
 /*footer styling for mobile*/
-@media only screen and (max-width:1199px) {
+@media only screen and (max-width: 1199px) {
   footer .jumbotron {
-    padding-left:20%;
-  }
-}
-
-@media only screen and (max-width:768px) {
+    padding-left: 20%; } }
+@media only screen and (max-width: 768px) {
   footer .jumbotron {
-    padding-left:15%;
-  }
+    padding-left: 15%; }
 
   footer .jumbotron p {
-    font-size:1.6rem;
-  }
-}
+    font-size: 1.6rem; } }
+
+/*# sourceMappingURL=style.css.map */
