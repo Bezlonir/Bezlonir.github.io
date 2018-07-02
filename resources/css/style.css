@@ -138,10 +138,21 @@ p {
   transition: border 0.2s;
 }
 
-@media screen only and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .headline {
+    margin-top: 1rem;
+  }
+
+  .project-picker {
+    height: 70px;
+  }
+
   .project-picker label {
     width: 15vw;
+    height: 60px;
   }
+
+
 }
 
 .project-picker img {
@@ -274,7 +285,7 @@ p {
   justify-content: space-between; }
 
 .robopig-preview {
-  background-image: url("../images/robopig.svg");
+  background-image: url("../images/robopig2.jpg");
   background-size: contain;
   background-position: center;
   background-size: cover; }
