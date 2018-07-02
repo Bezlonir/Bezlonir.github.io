@@ -127,26 +127,29 @@ p {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .project-picker label {
-  width: 100px;
+  width: 7vw;
   height: 100px;
   overflow: hidden;
   margin-bottom: 0;
-  box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0);
+  border: 3px inset rgba(255, 255, 255, 0);
+  transition: border 0.2s;
 }
 
-/* .project-picker li + li {
-  margin-left: 15px;
-} */
+@media screen only and (max-width: 768px) {
+  .project-picker label {
+    width: 15vw;
+  }
+}
 
 .project-picker img {
-  height: 100px;
-  width: auto;
+  height: 100%;
+  width: 90%;
+  transform: scale(2) translateX(2%);
   cursor: pointer;
-  transition: box-shadow 0.2s;
+
 }
 
 .sr-only {
@@ -160,7 +163,7 @@ p {
 }
 
 .project-picker input:checked + label {
-  box-shadow: inset 4px 4px rgba(255, 255, 15, 1);
+  border: 3px inset rgba(255, 255, 15,.8);
 }
 
 
@@ -271,7 +274,7 @@ p {
   justify-content: space-between; }
 
 .robopig-preview {
-  background-image: url("../images/robopig.jpg");
+  background-image: url("../images/robopig.svg");
   background-size: contain;
   background-position: center;
   background-size: cover; }

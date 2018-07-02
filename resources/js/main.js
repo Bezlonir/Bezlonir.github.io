@@ -4,7 +4,10 @@ var projects = document.querySelectorAll('.projects-row');
 
 $(document).ready(function(){
 
+  // make all projects display: none with CSS value and then display project 1
   disappearAllProjects();
+  projects[0].style.display = 'block';
+
   // on click, set the clicked link to active styling
   $('.navbar li').click(function(){
     var currentActive = $('.active').get(0);
