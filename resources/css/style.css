@@ -160,7 +160,7 @@ p {
   width: 90%;
   transform: scale(2) translateX(2%);
   cursor: pointer;
-
+  transition: transform 0.3s;
 }
 
 .sr-only {
@@ -177,6 +177,9 @@ p {
   border: 3px inset rgba(255, 255, 15,.8);
 }
 
+.project-picker input:checked + label img {
+  transform: scale(2.5) translateX(12%);
+}
 
 /*----------------*/
 /*projects styling*/
