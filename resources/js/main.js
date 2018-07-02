@@ -17,13 +17,17 @@ $(document).ready(function(){
 
   checkImages.forEach(function(alphaLabel, i){
     alphaLabel.addEventListener('click', function(){
+      checkImages.forEach(function(labImg){
+        labImg.attributes['aria-checked'].value = false;
+      });
+      this.attributes['aria-checked'].value = true;
+      console.log(this.attributes);
       var nv = this.attributes.for.nodeValue;
       var radThis = document.querySelector(`#${nv}`);
       radThis.checked;
       disappearAllProjects();
       projects[i].style.display = 'block';
       sizePreview();
-      console.log(projects[i]);
     });
   });
 
