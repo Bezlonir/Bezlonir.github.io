@@ -1,0 +1,308 @@
+/*portfolio site for Michael Bragg, web programmer*/
+
+// imports
+@import "../mixins/mixins.scss";
+@import "../helpers/links.scss";
+@import "../helpers/variables.scss";
+@import "../mixins/placeholders.scss";
+
+
+html {
+
+}
+
+p {
+  font-family:$bree;
+}
+
+.image-container {
+  max-width:100%;
+  height:auto;
+  overflow:hidden;
+}
+
+.image-container img {
+  max-width:100%;
+  height:auto;
+  max-height:100%;
+}
+
+.navbar {
+  font-family:$abril;
+  li {
+    line-height:50px;
+    padding-right:1rem;
+    &:active{
+      @include active-link(#f8f8f8);
+    }
+  }
+  img {
+    height:35px;
+    width:auto;
+  }
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color:inherit;
+}
+
+/*mobile styling for header*/
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    display:flex;
+  }
+
+  .navbar-nav li {
+    padding-left:1rem;
+  }
+}
+
+/*-----------------*/
+/*jumbotron styling*/
+/*-----------------*/
+.vision {
+  padding-top:5rem;
+  .jumbotron {
+    background-image: $mountains;
+    @extend %background-full;
+    height: 40rem;
+    text-align:center;
+    margin-bottom:0;
+  }
+  h1 {
+    color:#070712;
+    opacity:.95;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    font-family:$abril;
+    font-size:8rem;
+    font-weight:bold;
+    letter-spacing:1.4rem;
+    @include outline-shadow($trans-white);
+  }
+}
+
+
+/*mobile styling for jumbotron section*/
+@media only screen and (max-width:768px) {
+  .vision {
+    padding-top:6rem;
+  }
+
+  .vision h1 {
+    padding-top: 7rem;
+  }
+}
+
+/*----------------*/
+/*projects styling*/
+/*----------------*/
+.projects {
+  background-image:$snow;
+  padding-bottom:4rem;
+  background-size:contain;
+  background-repeat:repeat;
+  .decor {
+    background-color: $deep-blue;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+    padding:0;
+    .image-container {
+      margin:.4rem 0;
+      max-width:80%;
+      opacity:.9;
+    }
+    img {
+      height:90%;
+    }
+  }
+  .decor-top {
+    height:3.5rem;
+    margin-top:8rem;
+  }
+  .site-preview {
+    position:relative;
+    /*height:46rem;*/
+    opacity:.8;
+    padding-left:0;
+    padding-right:0;
+    box-shadow:-3px 3px $deep-blue;
+    transition: box-shadow 500ms ease-in 70ms;
+    &:hover {
+      box-shadow:none;
+    }
+    .preview-background {
+      height:100%;
+      max-width:100%;
+      background-color:$flat-gray;
+      color:$off-black;
+      padding-left:1rem;
+      padding-top:.5rem;
+      opacity:0;
+      z-index:900;
+      transition: opacity 500ms ease-in 260ms;
+      &:hover {
+        opacity:.95;
+      }
+      .preview-logo {
+        background-image:$logo;
+        @extend %background-bottom;
+        width:auto;
+        max-width:50%;
+        padding-top:20%;
+        height:15%;
+        margin:auto;
+        margin-top:6%;
+      }
+    }
+
+  }
+  .alliance-preview .preview-logo {
+    max-width:35%;
+    height:8%;
+  }
+
+}
+
+
+.preview-background h2 {
+  color:#f2f2fb;
+  font-family:"Abril Fatface", sans-serif;
+  text-shadow: 1px 1px #1b1b2c,
+              -1px 1px #1b1b2c,
+              1px -1px #1b1b2c,
+              -1px -1px #1b1b2c;
+}
+
+.preview-background .image-container {
+  margin-top:1rem;
+
+}
+
+.alliance-preview .preview-background:hover {
+  color:rgba(242,242,251,.6);
+}
+
+.link-split {
+  display:flex;
+  height:40%;
+}
+
+.site-link {
+  width:50%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  border-right: dotted 1px #dedef6;
+}
+
+.github-link {
+  width:50%;
+  height:auto;
+  margin-left:1rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.alliance-preview {
+  background-image:url("../images/bragg-group-comp2b.jpg");
+  background-position:center;
+  background-size:cover;
+  height:70rem;
+}
+
+.colmar-preview {
+  background-image:url("../images/colmarC.jpg");
+  background-position:top center;
+  background-size:cover;
+}
+
+.trackster-preview {
+  background-image:url("../images/tracksterC.jpg");
+  background-position:center;
+  background-size:cover;
+}
+
+.jumpstart-preview {
+  background-image:url("../images/jumpstartC.jpg");
+  background-position:center;
+  background-size:cover;
+}
+
+.match-game-preview {
+  background-image:url("../images/match-gameC.jpg");
+  background-position:contain;
+  background-size:cover;
+}
+
+/*mobile styling for projects section*/
+@media only screen and (max-width: 1199px) {
+  .preview-logo {
+    max-width:40%;
+    height:8%;
+  }
+
+  .projects-row {
+    margin-left:.5rem;
+    margin-right:.5rem;
+    width:calc(100% - 1rem);
+  }
+}
+
+/*mobile styling for projects section*/
+@media only screen and (max-width: 768px) {
+
+
+  .decor-top {
+    margin-top:10rem;
+  }
+}
+
+/*footer styling*/
+footer {
+  text-align:left;
+  background-color:rgba(25,30,50, .6);
+}
+
+footer .jumbotron {
+  background-color:inherit;
+  padding-left:40%;
+  margin-bottom:0;
+}
+
+footer h2 {
+  font-family:"Abril Fatface", sans-serif;
+  font-weight:bold;
+  font-size:4rem;
+  margin-bottom:.6rem;
+  color: #070712;
+  text-shadow: 1px 1px #dedef6,
+              -1px 1px #dedef6,
+              1px -1px #dedef6,
+              -1px -1px #dedef6;
+}
+
+footer .jumbotron p {
+  margin-bottom:.8rem;
+  color: #dedef6;
+}
+
+/*footer styling for mobile*/
+@media only screen and (max-width:1199px) {
+  footer .jumbotron {
+    padding-left:20%;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  footer .jumbotron {
+    padding-left:15%;
+  }
+
+  footer .jumbotron p {
+    font-size:1.6rem;
+  }
+}

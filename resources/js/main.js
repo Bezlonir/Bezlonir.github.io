@@ -1,6 +1,10 @@
+var checkImages = document.querySelectorAll('.project-picker label');
 
+var projects = document.querySelectorAll('.projects-row');
 
 $(document).ready(function(){
+
+  disappearAllProjects();
   // on click, set the clicked link to active styling
   $('.navbar li').click(function(){
     var currentActive = $('.active').get(0);
@@ -9,6 +13,18 @@ $(document).ready(function(){
       currentActive.setAttribute('class', ' ');
       thisClick.setAttribute('class', 'active');
     };
+  });
+
+  checkImages.forEach(function(alphaLabel, i){
+    alphaLabel.addEventListener('click', function(){
+      var nv = this.attributes.for.nodeValue;
+      var radThis = document.querySelector(`#${nv}`);
+      radThis.checked;
+      disappearAllProjects();
+      projects[i].style.display = 'block';
+      sizePreview();
+      console.log(projects[i]);
+    });
   });
 
   sizePreview();
@@ -38,3 +54,9 @@ function sizePreview() {
   });
 
 };
+
+function disappearAllProjects() {
+  projects.forEach(function(proj) {
+    proj.style.display = 'none';
+  })
+}

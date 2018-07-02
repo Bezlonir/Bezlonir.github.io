@@ -1,4 +1,38 @@
 /*portfolio site for Michael Bragg, web programmer*/
+.vision .jumbotron {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.projects .site-preview .preview-background .preview-logo {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+
+/* .snow-anim {
+  width: 100%;
+  height:140%;
+  background: url('../images/clouds3.png');
+  background-size:60% 180%;
+  background-repeat:repeat-x;
+
+  animation-name: cloud-move;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cloud-move {
+  0% {
+    background-position: left 0% bottom 120%;
+  }
+  99% {
+    background-position: left 60% bottom 120%;
+  }
+  100% {
+    background-position: left 0% bottom 120%;
+  }
+} */
+
 p {
   font-family: "Bree Serif", serif; }
 
@@ -12,24 +46,20 @@ p {
   height: auto;
   max-height: 100%; }
 
-/*--------------*/
-/*header styling*/
-/*--------------*/
 .navbar {
-  font-family: "Abril Fatface" , sans-serif; }
+  font-family: "Abril Fatface", sans-serif; }
   .navbar li {
     line-height: 50px;
     padding-right: 1rem; }
     .navbar li:active {
       background-color: #f8f8f8;
       text-shadow: 1px 1px 2px #a0a0ab; }
+  .navbar img {
+    height: 35px;
+    width: auto; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   background-color: inherit; }
-
-.navbar img {
-  height: 35px;
-  width: auto; }
 
 /*mobile styling for header*/
 @media only screen and (max-width: 768px) {
@@ -42,27 +72,25 @@ p {
 /*jumbotron styling*/
 /*-----------------*/
 .vision {
-  padding-top: 5rem; }
-
-.vision .jumbotron {
-  background-image: url("../images/snowy-mountains.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 40rem;
-  text-align: center;
-  margin-bottom: 0; }
-
-.vision h1 {
-  color: #070712;
-  opacity: .95;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  font-family: "Abril Fatface", sans-serif;
-  font-size: 8rem;
-  font-weight: bold;
-  letter-spacing: 1.4rem;
-  text-shadow: 1px 1px 5px rgba(220, 220, 236, 0.6), 3px 1px 8px rgba(220, 220, 236, 0.4), 1px 1px rgba(220, 220, 236, 0.4), -1px 1px rgba(220, 220, 236, 0.4), 1px -1px rgba(220, 220, 236, 0.4), -1px -1px rgba(220, 220, 236, 0.4); }
+  padding-top: 3rem; }
+  .vision .jumbotron {
+    background-image: url("../images/snowy-mountains.jpg");
+    position:relative;
+    height: 16rem;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+    padding-top: }
+  .vision h1 {
+    color: #070712;
+    opacity: .95;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 8rem;
+    font-weight: bold;
+    letter-spacing: 1.4rem;
+    text-shadow: 1px 1px 5px rgba(220, 220, 236, 0.6), 3px 1px 8px rgba(220, 220, 236, 0.6), 1px 1px rgba(220, 220, 236, 0.6), -1px 1px rgba(220, 220, 236, 0.6), 1px -1px rgba(220, 220, 236, 0.6), -1px -1px rgba(220, 220, 236, 0.6); }
 
 /*mobile styling for jumbotron section*/
 @media only screen and (max-width: 768px) {
@@ -71,69 +99,139 @@ p {
 
   .vision h1 {
     padding-top: 7rem; } }
+
+
+/* ---------------------- */
+/* project picker styling */
+/* ---------------------- */
+
+.headline {
+  font-family: "Bree Serif", serif;
+  font-size: 3rem;
+  color: white;
+  width: auto;
+
+  background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(30, 30, 30, 0.05));
+  text-shadow: 1px 1px 2px rgba(30, 30, 30, .9),
+              -1px 1px 2px rgba(30, 30, 30, .9),
+              1px -1px 2px rgba(30, 30, 30, .9),
+              -1px 1px 2px rgba(30, 30, 30, .9),
+              1px 1px 6px rgba(30, 30, 30, .9);
+  margin-top: 2rem;
+}
+
+.project-picker {
+  margin-top: 0;
+  display: flex;
+  height: 120px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.project-picker label {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 0;
+  box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0);
+}
+
+/* .project-picker li + li {
+  margin-left: 15px;
+} */
+
+.project-picker img {
+  height: 100px;
+  width: auto;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.sr-only {
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+}
+
+.radio-project {
+  display:none;
+}
+
+.project-picker input:checked + label {
+  box-shadow: inset 4px 4px rgba(255, 255, 15, 1);
+}
+
+
 /*----------------*/
 /*projects styling*/
 /*----------------*/
+.projects-row {
+  display: block;
+
+}
+
+.project {
+
+}
+
 .projects {
   background-image: url("../images/snow3.jpg");
+
   padding-bottom: 4rem;
   background-size: contain;
-  background-repeat: repeat; }
-
-.decor {
-  background-color: rgba(25, 30, 50, 0.8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0; }
-
-.decor-top {
-  height: 3.5rem;
-  margin-top: 8rem; }
-
-.decor .image-container {
-  margin: .4rem 0;
-  max-width: 80%;
-  opacity: .9; }
-
-.decor img {
-  height: 90%; }
-
-.site-preview {
-  position: relative;
-  /*height:46rem;*/
-  opacity: .8;
-  padding-left: 0;
-  padding-right: 0;
-  box-shadow: -3px 3px rgba(25, 30, 50, 0.8);
-  transition: box-shadow 500ms ease-in 70ms; }
-
-.site-preview:hover {
-  box-shadow: none; }
-
-.preview-background {
-  height: 100%;
-  max-width: 100%;
-  background-color: #3f3f4e;
-  color: #dedef6;
-  padding-left: 1rem;
-  padding-top: .5rem;
-  opacity: 0;
-  z-index: 900;
-  transition: opacity 500ms ease-in 260ms; }
-
-.preview-logo {
-  background-image: url("../images/mountains-accent2alt.png");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  width: auto;
-  max-width: 50%;
-  padding-top: 20%;
-  height: 15%;
-  margin: auto;
-  margin-top: 6%; }
+  background-repeat: repeat;
+  height: auto; }
+  .projects .decor {
+    background-color: rgba(25, 30, 50, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0; }
+    .projects .decor .image-container {
+      margin: .4rem 0;
+      max-width: 80%;
+      opacity: .9; }
+    .projects .decor img {
+      height: 90%; }
+  .projects .decor-top {
+    height: 3.5rem;
+    margin-top: 2rem; }
+  .projects .site-preview {
+    position: relative;
+    /* height:46rem; */
+    opacity: .8;
+    padding-left: 0;
+    padding-right: 0;
+    box-shadow: -3px 3px rgba(25, 30, 50, 0.8);
+    transition: box-shadow 500ms ease-in 70ms; }
+    .projects .site-preview:hover {
+      box-shadow: none; }
+    .projects .site-preview .preview-background {
+      height: 100%;
+      max-width: 100%;
+      background-color: #3f3f4e;
+      color: #dedef6;
+      padding-left: 1rem;
+      padding-top: .5rem;
+      opacity: 0;
+      z-index: 900;
+      transition: opacity 500ms ease-in 260ms; }
+      .projects .site-preview .preview-background:hover {
+        opacity: .95; }
+      .projects .site-preview .preview-background .preview-logo {
+        background-image: url("../images/mountains-accent2alt.png");
+        width: auto;
+        max-width: 50%;
+        padding-top: 20%;
+        height: 15%;
+        margin: auto;
+        margin-top: 6%; }
+  .projects .alliance-preview .preview-logo {
+    max-width: 35%;
+    height: 8%; }
 
 .alliance-preview .preview-logo {
   max-width: 35%;
@@ -172,6 +270,12 @@ p {
   flex-direction: column;
   justify-content: space-between; }
 
+.robopig-preview {
+  background-image: url("../images/robopig.jpg");
+  background-size: contain;
+  background-position: center;
+  background-size: cover; }
+
 .alliance-preview {
   background-image: url("../images/bragg-group-comp2b.jpg");
   background-position: center;
@@ -197,6 +301,7 @@ p {
   background-image: url("../images/match-gameC.jpg");
   background-position: contain;
   background-size: cover; }
+
 
 /*mobile styling for projects section*/
 @media only screen and (max-width: 1199px) {

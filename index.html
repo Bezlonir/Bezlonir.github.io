@@ -36,18 +36,116 @@
     <!-- vision (jumbotron) section -->
     <section class="vision">
       <div class="jumbotron">
-        <h1>vision</h1>
+        <!-- <div class="snow-anim"> -->
+          <h1>vision</h1>
+        <!-- </div> -->
       </div>
     </section>
+
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3 ">
+        <h2 class="headline">Projects</h2>
+        <ul class="project-picker">
+          <li class="">
+            <input id="project-robopig" type="radio" name="project-radio" class="radio-project" value="robopig-project" checked>
+            <label for="project-robopig">
+              <img src="./resources/images/robopig.jpg">
+              <span class="sr-only"></span>
+            </label>
+          </li>
+          <li class="">
+            <input id="project-alliance" type="radio" name="project-radio" class="radio-project" value="alliance-project">
+            <label for="project-alliance">
+              <span class="sr-only"></span>
+              <img src="./resources/images/bragg-group-comp2b.jpg">
+            </label>
+          </li>
+          <li class="">
+            <input id="project-colmar" type="radio" name="project-radio" class="radio-project" value="colmar-project">
+            <label for="project-colmar">
+              <span class="sr-only"></span>
+              <img src="./resources/images/colmarC.jpg">
+            </label>
+          </li>
+          <li class="">
+            <input id="project-trackster" type="radio" name="project-radio" class="radio-project" value="trackster-project">
+            <label for="project-trackster">
+              <img src="./resources/images/tracksterC.jpg">
+              <span class="sr-only"></span>
+            </label>
+          </li>
+          <li class="">
+            <input id="project-jumpstart" type="radio" name="project-radio" class="radio-project" value="jumpstart-project">
+            <label for="project-jumpstart">
+              <img src="./resources/images/jumpstartC.jpg">
+              <span class="sr-only"></span>
+            </label>
+          </li>
+          <li class="">
+            <input id="project-match-game" type="radio" name="project-radio" class="radio-project" value="match-game-project">
+            <label for="project-match-game">
+              <img src="./resources/images/match-gameC.jpg">
+              <span class="sr-only"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div> <!-- end row -->
+
+    <!-- <ul class="project-listing">
+      <li class="">
+        <label for="">
+          <span class="sr-only"></span>
+          <img src="">
+        </label>
+        <input id="" type="radio" name="preview-radio" class="radio-project" value="">
+      </li>
+    </ul> -->
 
     <!-- projects section displays links to websites -->
     <section id = "projects" class="projects">
       <div class="container-fluid">
         <!-- decor->content->decor in vertical cascade -->
-        <div class="row projects-row">
+        <div id="#robopig-project" class="row projects-row">
+
+          <!-- robopig project -->
+          <div class="project col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+            <div class="decor decor-top col-xs-4 col-xs-offset-8">
+              <div class="image-container">
+                <img src="./resources/images/mountains-accent2.png"/>
+              </div>
+            </div>
+
+            <!-- robopig preview box -->
+            <div class="site-preview robopig-preview col-xs-12">
+              <div class="preview-background">
+                <h2>RoboPig Deathmatch!</h2>
+                <div class="link-split">
+                  <div class="site-link">
+                    <p>A Game of Chance and Strategy. Arm your RoboPig with energy earned by playing pig. Then battle your RoboPig to the death RPG-style.</p>
+                    <a href="https://bezlonir.github.io/robopig" target="_blank">visit site</a>
+                  </div>
+                  <div class="github-link">
+                    <p>Functional Programming in JavaScript. Event Listeners linked to objects. Modular design. Layered transparencies scripted for paper doll effect.</p>
+                    <a href="https://github.com/Bezlonir/robopig" target="_blank">github</a>
+                  </div>
+                </div>
+                <div class="preview-logo">
+                </div>
+              </div>
+            </div>
+
+            <div class="decor decor-bottom col-xs-4 col-xs-offset-8">
+            </div>
+
+          </div> <!-- project -->
+        </div> <!-- projects-row RoboPig -->
+
+
+        <div id="#alliance-project" class="row projects-row">
 
           <!-- bragg-group project -->
-          <div class="project col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+          <div class="project col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
             <div class="decor decor-top col-xs-4 col-xs-offset-8">
               <div class="image-container">
                 <img src="./resources/images/mountains-accent2.png"/>
@@ -79,10 +177,10 @@
           </div> <!-- project -->
         </div> <!-- projects-row -->
 
-        <div class="row projects-row">
+        <div id="#colmar-project" class="row projects-row">
 
           <!-- colmar academy project -->
-          <div class="project col-lg-4 col-lg-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+          <div class="project col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
             <div class="decor decor-top col-xs-4 col-xs-offset-8">
               <div class="image-container">
                 <img src="./resources/images/mountains-accent2.png"/>
@@ -111,9 +209,11 @@
             <div class="decor decor-bottom col-xs-4 col-xs-offset-8">
             </div>
           </div> <!-- project -->
+        </div>
 
+        <div id="#trackster-project" class="row projects-row">
           <!-- trackster project -->
-          <div class="project col-lg-4 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+          <div class="project col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
             <div class="decor decor-top col-xs-4 col-xs-offset-8">
               <div class="image-container">
                 <img src="./resources/images/mountains-accent2.png"/>
@@ -145,9 +245,9 @@
 
         </div> <!-- projects-row -->
 
-        <div class="row projects-row">
+        <div id="#jumpstart-project" class="row projects-row">
           <!-- jumpstart project -->
-          <div class="project col-lg-4 col-lg-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+          <div class="project col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
             <div class="decor decor-top col-xs-4 col-xs-offset-8">
               <div class="image-container">
                 <img src="./resources/images/mountains-accent2.png"/>
@@ -176,9 +276,11 @@
             <div class="decor decor-bottom col-xs-4 col-xs-offset-8">
             </div>
           </div> <!-- project -->
+        </div>
 
+        <div id="#matchgame-project" class="row projects-row">
           <!-- match game project -->
-          <div class="project col-lg-4 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+          <div class="project col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
             <div class="decor decor-top col-xs-4 col-xs-offset-8">
               <div class="image-container">
                 <img src="./resources/images/mountains-accent2.png"/>
