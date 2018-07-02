@@ -21,7 +21,6 @@ $(document).ready(function(){
         labImg.attributes['aria-checked'].value = false;
       });
       this.attributes['aria-checked'].value = true;
-      console.log(this.attributes);
       var nv = this.attributes.for.nodeValue;
       var radThis = document.querySelector(`#${nv}`);
       radThis.checked;
