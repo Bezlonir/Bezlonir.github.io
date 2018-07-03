@@ -76,7 +76,7 @@ p {
   .vision .jumbotron {
     background-image: url("../images/snowy-mountains.jpg");
     position:relative;
-    height: 16rem;
+    height: 40rem;
     text-align: center;
     margin-bottom: 0;
     padding: 0;
@@ -90,12 +90,17 @@ p {
     font-size: 8rem;
     font-weight: bold;
     letter-spacing: 1.4rem;
-    text-shadow: 1px 1px 5px rgba(220, 220, 236, 0.6), 3px 1px 8px rgba(220, 220, 236, 0.6), 1px 1px rgba(220, 220, 236, 0.6), -1px 1px rgba(220, 220, 236, 0.6), 1px -1px rgba(220, 220, 236, 0.6), -1px -1px rgba(220, 220, 236, 0.6); }
+    text-shadow: 1px 1px 5px rgba(220, 220, 236, 0.6),
+                3px 1px 8px rgba(220, 220, 236, 0.6),
+                1px 1px rgba(220, 220, 236, 0.6),
+                -1px 1px rgba(220, 220, 236, 0.6),
+                1px -1px rgba(220, 220, 236, 0.6),
+                -1px -1px rgba(220, 220, 236, 0.6); }
 
 /*mobile styling for jumbotron section*/
 @media only screen and (max-width: 768px) {
   .vision {
-    padding-top: 6rem; }
+    padding-top: 4rem; }
 
   .vision h1 {
     padding-top: 7rem; } }
@@ -108,16 +113,17 @@ p {
 .headline {
   font-family: "Bree Serif", serif;
   font-size: 3rem;
+  text-align: left;
   color: white;
   width: auto;
 
-  background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(30, 30, 30, 0.05));
+  background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(30, 30, 30, 0.01));
   text-shadow: 1px 1px 2px rgba(30, 30, 30, .9),
               -1px 1px 2px rgba(30, 30, 30, .9),
               1px -1px 2px rgba(30, 30, 30, .9),
               -1px 1px 2px rgba(30, 30, 30, .9),
               1px 1px 6px rgba(30, 30, 30, .9);
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .project-picker {
@@ -140,7 +146,7 @@ p {
 
 @media only screen and (max-width: 768px) {
   .headline {
-    margin-top: 1rem;
+    margin-top: 7rem;
   }
 
   .project-picker {
@@ -160,7 +166,8 @@ p {
   width: 90%;
   transform: scale(2) translateX(2%);
   cursor: pointer;
-  transition: transform 0.3s;
+  opacity: 0.7;
+  transition: all 0.3s;
 }
 
 .sr-only {
@@ -179,7 +186,9 @@ p {
 
 .project-picker input:checked + label img {
   transform: scale(2.5) translateX(12%);
+  opacity: 1;
 }
+
 
 /*----------------*/
 /*projects styling*/
